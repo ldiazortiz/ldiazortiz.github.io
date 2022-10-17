@@ -5,12 +5,12 @@
   --secunday-font: "Urbanist", sans-serif;
 
   --primary-font-color: #fff;
-  --secundary-font-color: #333;
+  --secundary-font-color: rgba(51, 51, 51, 0.947);
 
   /* --header-color: ;*/
   --body1-color: rgba(240, 237, 237, 0.91);
   --body2-color: rgba(201, 199, 199, 0.867);
-  --bg-color: #333;
+  --bg-color: rgba(51, 51, 51, 0.953);
 }
 
 html {
