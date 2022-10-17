@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary-font: "Quicksand", sans-serif;
+  --secunday-font: "Urbanist", sans-serif;
+
+  --primary-font-color: #fff;
+  --secundary-font-color: #333;
+
+  /* --header-color: ;*/
+  --body1-color: rgba(240, 237, 237, 0.91);
+  --body2-color: rgba(201, 199, 199, 0.867);
+  --bg-color: #333;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 150px;
+}
+
+.body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Urbanist", sans-serif;
+  background-color: var(--bg-color);
+  color: #fff;
+  font-size: 1.1em;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* NAV y MENU*/
+
+.container-nav {
+  top: 0;
+  display: block;
+  width: 100%;
+  position: fixed;
+  background-color: #053482;
+}
+
+.nav-wrapper {
+  /* padding-top: 0.5em; */
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container-logo {
+  background-image: url(../assets/logoCodealoSmall.svg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 145px;
+  height: 90px;
+}
+
+.container-nav__menu {
+  /* padding:0 0.2em; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1em;
+  font-size: clamp(0.8em, 1vw + 0.8em, 2.25em);
+}
+
+.container-nav__menu__li {
+  list-style: none;
+}
+
+.container-nav__menu__link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container-gallery-details {
+  margin-top: 0;
+}
+
+.container-main__cards__card__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.container-main__cards__card__content__title,
+.container-header__content-wrap__title,
+.container-main__sec__content-wrap__title,
+.container-gallery-details__content-wrap__title {
+  margin: 0;
+  padding: 1em 0;
+  font-family: var(--secunday-font);
+  color: var(--secundary-font-color);
+}
+
+.container-header__content-wrap__title {
+  font-family: var(--primary-font);
+  color: var(--primary-font-color);
+
+  font-size: clamp(1.5em, 2vw + 1.5em, 3.5em);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.container-header__content-wrap__info,
+.container-main__sec__content-wrap__info,
+.container-gallery-details__content-wrap__info,
+.container-main__cards__card__content__info,
+.container-main__about__content-wrap__info,
+.container-main__contact__content-wrap__info,
+.container-main__contact__content-wrap__email,
+.container-footer__content-wrap__info {
+  margin: 0;
+  padding: 0.5em 0;
+  text-align: justify;
+  font-family: var(--secunday-font);
+}
+
+.container-header__content-wrap__info {
+  text-align: center;
+  font-family: var(--primary-font);
+  font-size: clamp(1.2em, 1vw + 1.2em, 3em);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.container-header__content-wrap__info__span {
+  font-size: clamp(1em, 1vw + 1em, 3.5em);
+}
+
+.container-header__content-wrap__info__cite {
+  text-align: right;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: var(--secunday-font);
+  padding-right: 3em;
+}
+
+.container-gallery-details__content-wrap__info {
+  margin: 0;
+  padding: 0.5em 0;
+  text-align: justify;
+  font-family: var(--secunday-font);
+  color: var(--secundary-font-color);
+}
+
+.container-header__content-wrap__btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  padding: 1em 2em;
+  border: 1px solid #666;
+  margin: 1em 0;
+  font-family: var(--primary-font);
+}
+
+.container-header__content-wrap__btn:hover {
+  background-color: var(--body1-color);
+  color: rgb(8, 8, 8);
+}
+
+/* Header */
+
+.container-header {
+  /* top: 90px; */
+  top: 150px;
+  min-height: 450px;
+  color: #fff;
+  text-align: center;
+}
+
+.container-header__bg-img {
+  position: absolute;
+  /* background: #333 url(../img-small/15_puenteDePatagonia.jpg); */
+  background: #333 url(../img-WEBP/puenteDePatagoniaFull.webp);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.container-header__content-wrap,
+.container-main__sec__content-wrap,
+.container-gallery-details__content-wrap,
+.container-main__about__content-wrap {
+  padding: 0 0.9em;
+}
+
+.container-main__sec__content-wrap__title,
+.container-gallery-details__content-wrap__title,
+.container-main__about__content-wrap__title {
+  font-family: var(--secunday-font);
+  font-weight: 600;
+  font-size: clamp(0.8em, 1vw + 0.8em, 2.5em);
+}
+
+#container-main__sec {
+  background-color: var(--body1-color);
+  color: #333;
+  /* padding-bottom: 2em; */
+}
+
+#container-gallery-details {
+  background-color: var(--body2-color);
+  color: #fff;
+  padding-bottom: 2em;
+}
+
+#container-main__cards {
+  padding: 2em 1em 1em;
+}
+
+.container-main__cards__ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container-main__cards__li {
+  margin-bottom: 1em;
+  background-color: #fff;
+  color: #333;
+}
+
+.container-main__cards__card__content {
+  padding: 1.5em;
+}
+
+#container-main__about {
+  background-color: #fff;
+  color: #333;
+  padding: 2em;
+}
+
+#container-main__contact {
+  /* padding: 2em; */
+  color: #fff;
+}
+
+/* Historia de Puerto Rico */
+.container-main__about__content-wrap__info__lista {
+  text-align: left;
+}
+
+/* Estos dos azules fueron picked del cielo de las fotos */
+.container-main__contact__content-wrap:first-child {
+  /* background-color: #053482; */
+  background-color: var(--body1-color);
+  color: var(--secundary-font-color);
+  padding: 0 1em;
+}
+
+.container-main__contact__content-wrap__photo {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.container-main__contact__content-wrap:nth-child(2) {
+  /* background-color: #4f75bc; */
+  background-color: var(--body2-color);
+  color: var(--secundary-font-color);
+  padding: 0 1em;
+}
+
+.container-main__contact__content-wrap__email {
+  color: var(--secundary-font-color);
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* formulario trabajado con https://formspree.io/*/
+
+.container-main__contact__content-wrap__form {
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.container-main__contact__content-wrap__form__lbl {
+  display: block;
+  text-align: left;
+}
+
+.container-main__contact__content-wrap__form__input {
+  width: 75%;
+  height: 2em;
+  font-size: 1em;
+  /* font-size: large; */
+  caret-color: red;
+  margin-bottom: 1em;
+}
+
+.container-main__contact__content-wrap__form__btn {
+  display: block;
+  padding: 0.5em;
+  width: 75%;
+  height: 3em;
+  cursor: pointer;
+  /* background-color: black;
+  color: #fff; */
+
+  /* background-color: #fff;
+  color: black; */
+  background-color: #333;
+  color: #fff;
+}
+
+.container-main__contact__content-wrap__form__btn:hover {
+  background-color: var(--body1-color);
+  color: rgb(8, 8, 8);
+
+  /* background-color: black;
+  color: #fff; */
+  display: block;
+  width: 75%;
+  height: 3em;
+  cursor: pointer;
+}
+
+/* footer */
+#container-footer {
+  padding: 2em;
+  color: #fff;
+  text-align: center;
+}
+
+.container-footer__link__a {
+  color: #055fef;
+  text-decoration: none;
+}
+
+.container-footer__content-wrap {
+  padding: 0 3em;
+}
+
+.container-footer__content-wrap__info {
+  text-align: center;
+}
+
+/* Media Queries */
+@media (min-width: 700px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+  }
+
+  .nav-wrapper {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .container-logo {
+    width: 170px;
+  }
+
+  .container-main__sec__content-wrap__info,
+  .container-gallery-details__content-wrap__info {
+    columns: 2;
+    column-gap: 2em;
+  }
+
+  .container-main__cards__ul,
+  .container-header__content-wrap,
+  .container-main__sec__content-wrap,
+  .container-gallery-details__content-wrap,
+  .container-main__about__content-wrap,
+  .container-main__contact__content-wrap,
+  .container-footer__content-wrap {
+    grid-column: 2/4;
+  }
+
+  .container-main__contact__content-wrap,
+  .container-footer__content-wrap,
+  .container-main__sec__content-wrap__info,
+  .container-gallery-details__content-wrap__info {
+    grid-column: span 2;
+  }
+
+  .container-main__cards__ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .container-main__cards__li {
+    width: 33%;
+  }
+}
