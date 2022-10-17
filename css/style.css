@@ -55,7 +55,8 @@ html {
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 145px;
+  /* width: 145px; */
+  width: 160px;
   height: 90px;
 }
 
