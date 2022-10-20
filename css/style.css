@@ -68,7 +68,6 @@ html {
 }
 
 .container-nav__menu {
-  /* padding:0 0.2em; */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
