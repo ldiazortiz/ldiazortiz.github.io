@@ -58,6 +58,13 @@ html {
   /* width: 145px; */
   width: 160px;
   height: 90px;
+
+  transition-duration: 0.8s;
+  transform-origin: center bottom;
+}
+
+.container-logo:hover {
+  transform: scale(1, 0.5);
 }
 
 .container-nav__menu {
