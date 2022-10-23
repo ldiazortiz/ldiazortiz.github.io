@@ -13,7 +13,7 @@ El 100% de las fotos que figuran en el proyecto fueron tomadas por la desarrolla
 Haga clic sobre el enlace para visitar [El Humacao que yo amo](https://ldiazortiz.github.io) 
 
 ## Cómo puedo acceder al repositorio
-Presiona el enlace para ver el detalle del código o [repositorio](https://ldiazortiz/ldiazortiz.github.io)
+Presiona el enlace para ver el detalle del código o [repositorio](https://github.com/ldiazortiz/ldiazortiz.github.io)
 
 
 
